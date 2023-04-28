@@ -149,7 +149,7 @@ task WMGame "Web & Mobile Game" {
   task tandroidF "Android Front End"{
     purge chargeset
     chargeset back
-    responsible dev4
+    responsible dev2
     depends WMGame.tback.tBEd
    
   
