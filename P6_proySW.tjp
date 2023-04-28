@@ -42,6 +42,11 @@ rate 145.2
 # specify accounts. One for the development costs, one for the
 # documentation costs, and one account to credit the customer payments
 # to.
+
+shift 4hShift "week 4h" {
+  workinghours mon - fri 08:00-12:00
+}
+
 account cost "Project Cost" {
   account manag "Management"
   account wFront "Web Front-End"
@@ -71,7 +76,7 @@ resource dev3 "Peter Green" {
 resource dev4 "Jose Otero" {
   email "891835@unizar.es"
   rate 200
-  shifts MonFri4h
+  shifts 4hShift
 
 }
 
