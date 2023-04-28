@@ -151,7 +151,7 @@ task WMGame "Web & Mobile Game" {
     chargeset back
     responsible dev2
     depends WMGame.tback.tBEd
-   
+    effort 9d
   
   }
   
