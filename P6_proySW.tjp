@@ -43,7 +43,7 @@ rate 145.2
 # documentation costs, and one account to credit the customer payments
 # to.
 
-shift 4hShift "week 4h" {
+shift Shift4h "week 4h" {
   workinghours mon - fri 08:00-12:00
 }
 
@@ -76,7 +76,7 @@ resource dev3 "Peter Green" {
 resource dev4 "Jose Otero" {
   email "891835@unizar.es"
   rate 200
-  shifts 4hShift
+  shifts Shift4h
 
 }
 
