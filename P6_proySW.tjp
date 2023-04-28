@@ -148,11 +148,14 @@ task WMGame "Web & Mobile Game" {
   
   task tandroidF "Android Front End"{
     purge chargeset
-    effort 9d
     chargeset back
     responsible dev2
     depends WMGame.tback.tBEd
-
+	task tAndroidFEc "Android Front End Construction"{
+	      	effort 15d
+      		allocate dev2, dev3
+      		depends WMGame.twebF.tGUId
+	}
   
   }
   
