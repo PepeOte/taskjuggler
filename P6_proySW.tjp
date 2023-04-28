@@ -19,7 +19,7 @@ project pSix "Web Game"  2023-03-15 +8.5m {
   # the project reports. If not specified, the current day will be
   # used, but this will likely be outside of the project range, so it
   # can't be seen in the reports.
-  now 2023-04-15-13:00
+  now 2023-04-28-13:00
   # The currency for all money values is the US Dollar.
   currency "EUR"
 
@@ -173,6 +173,11 @@ task WMGame "Web & Mobile Game" {
       effort 1d
       allocate dev1,dev2
       depends WMGame.tback
+            journalentry 2023-04-28 "Problemas con la nube" {
+        author dev1
+        alert red
+        summary "Estamos teniendo problemas porque la nube va muy lenta."
+      }
     }
     
     task tBENube "Subir a la nube" {
