@@ -170,11 +170,6 @@ task WMGame "Web & Mobile Game" {
     chargeset back
     responsible dev1
     depends WMGame.tback
-	task tAndroidFEc "Android Front End Construction"{
-	      	effort 15d
-      		allocate dev2, dev3
-      		depends WMGame.twebF.tGUId
-	}
     task tBEdecidir "Dedicir donde desplegar" {
       effort 1d
       allocate dev1,dev2
